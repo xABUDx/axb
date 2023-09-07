@@ -634,19 +634,3 @@
 .back-to-top i {
     font-size: 16px; /* Sesuaikan ukuran ikon sesuai kebutuhan Anda */
 }
-
-/* Mengatur tinggi offcanvas menjadi 70% dari layar di layar ponsel */
-@media screen and (max-width: 768px) {
-    .offcanvas-bottom {
-        height: 70%;
-        max-height: 70%;
-        transform: translateY(70%);
-    }
-}
-
-/* CSS untuk tampilan desktop */
-.video {
-    width: 25%; /* Lebar video tetap 25% dari lebar tampilan */
-    max-width: 100%; /* Maksimalkan lebar video agar sesuai dengan kontainer parentnya */
-    height: auto; /* Biarkan tinggi video disesuaikan agar aspek rasio tetap terjaga */
-}
