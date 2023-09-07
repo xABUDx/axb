@@ -650,3 +650,11 @@
     max-width: 100%; /* Maksimalkan lebar video agar sesuai dengan kontainer parentnya */
     height: auto; /* Biarkan tinggi video disesuaikan agar aspek rasio tetap terjaga */
 }
+
+/* CSS untuk layar desktop */
+@media screen and (min-width: 769px) {
+    .back-to-top:hover {
+        transform: rotate(-5deg);
+    }
+}
+
