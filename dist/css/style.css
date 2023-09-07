@@ -2,6 +2,30 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Animasi Hamburger */
+.hamburger span {
+    display: block;
+    width: 30px; /* Lebar garis hamburger */
+    height: 3px; /* Tinggi garis hamburger */
+    background-color: #333; /* Warna garis hamburger */
+    margin: 6px auto; /* Jarak antar garis hamburger */
+    transition: 0.4s; /* Durasi animasi */
+  }
+  
+  /* Saat tombol hamburger diklik */
+  .hamburger.navbar-toggler-icon.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .hamburger.navbar-toggler-icon.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.navbar-toggler-icon.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+
 .header {
     background-color: rgb(236, 235, 252);
 }
@@ -194,7 +218,30 @@
     -webkit-animation: animasi 2s infinite;
   }
   
- 
+  @keyframes animasi {
+    0% {
+      transform: scale(1);
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+    }
+  }
+  
   .daftar .box-daftar button {
     border: none;
     min-width: 100px;
